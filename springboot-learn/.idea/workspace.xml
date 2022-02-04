@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20415ac9-4172-4802-baa0-48b49817a817" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="20415ac9-4172-4802-baa0-48b49817a817" name="Default Changelist" comment="spring boot starter">
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itzixi/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itzixi/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itzixi/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itzixi/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/springboot-learn.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itzixi/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itzixi/Application.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/itzixi/controller/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itzixi/controller/HelloController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/itzixi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,8 +288,16 @@
       <workItem from="1614783222473" duration="1823000" />
       <workItem from="1614822323287" duration="11306000" />
       <workItem from="1614837842688" duration="2363000" />
-      <workItem from="1643982148300" duration="2106000" />
+      <workItem from="1643982148300" duration="3935000" />
     </task>
+    <task id="LOCAL-00001" summary="spring boot starter">
+      <created>1643985088615</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1643985088615</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -414,6 +414,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="spring boot starter" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring boot starter" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/itzixi/config/GraceExceptionHandler.java">

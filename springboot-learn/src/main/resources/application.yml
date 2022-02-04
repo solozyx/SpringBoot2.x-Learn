@@ -29,7 +29,7 @@ spring:
       auto-commit: true                       # 自动提交
       idle-timeout: 600000                    # 连接超时的最大时长（毫秒），超时则会被释放（retired）
       pool-name: DataSourceHikariCP           # 连接池的名字
-      max-lifetime: 18000000                  # 连接池的最大生命时长（毫秒），超时则会被释放（retired）
+      max-lifetime: 1800000                   # 连接池的最大生命时长（毫秒），超时则会被释放（retired）
       connection-test-query: SELECT 1
   freemarker:
     template-loader-path: classpath:/templates/ftl/
