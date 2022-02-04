@@ -11,6 +11,7 @@ import tk.mybatis.spring.annotation.MapperScan;
  */
 @SpringBootApplication
 @MapperScan("com.itzixi.mapper")
+
 public class Application {
 
     public static void main(String[] args) {

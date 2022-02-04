@@ -1,26 +1,41 @@
 package com.itzixi.controller;
 
-
 import com.itzixi.config.SpringBootConfig;
 import com.itzixi.pojo.MyBean;
 import com.itzixi.pojo.Stu;
 import com.itzixi.pojo.UserConfig;
 import com.itzixi.utils.AsyncTask;
+
 import lombok.extern.slf4j.Slf4j;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+// 控制器,可以做视图跳转
 //@Controller
+
 @Slf4j
+
+// @RestController = @Controller + @ResponseBody
 @RestController
+
 public class HelloController {
 
-//    @RequestMapping("hello")
-//    @ResponseBody
-    @GetMapping("hello")
-//    @PostMapping("hello")
+    // API接口访问映射
+    // @RequestMapping("hello")
+
+    // 前后端分离,不再使用JSP,SpringMVC会把返回的字符串渲染到视图,这里没有视图
+    // 声明返回1个字符串类型
+    // @ResponseBody
+
+    // @GetMapping("hello")
+
+    @PostMapping("hello")
+
     public String hello() {
 
         MyBean myBean = new MyBean("jack", 18, "五", "十八班");
@@ -34,12 +49,12 @@ public class HelloController {
 
     @Autowired
     private AsyncTask asyncTask;
+
     @GetMapping("doAsyncTask")
     public Object doAsyncTask() {
         asyncTask.doMyTask();
         return "Hello doAsyncTask~";
     }
-
 
 
     @Autowired
@@ -51,6 +66,7 @@ public class HelloController {
     public Object getStu() {
         return stu;
     }
+
     @GetMapping("getConfigStu")
     public Object getConfigStu() {
         return springBootConfig.stu();

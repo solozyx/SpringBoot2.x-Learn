@@ -11,7 +11,12 @@
     <!-- 默认打包方式为jar -->
     <packaging>jar</packaging>
 
-    <!-- 引入父工程SpringBoot，它包含了很多springboot的子工程 -->
+    <!--
+    starter 启动器
+    引入父工程SpringBoot
+    它包含了很多springboot的子工程
+    默认使用了对应版本最稳定的依赖库
+    -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
