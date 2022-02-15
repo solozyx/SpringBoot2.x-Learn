@@ -42,21 +42,21 @@ spring:
 
 # 整合mybatis
 mybatis:
-  type-aliases-package: com.itzixi.pojo       # 所有pojo类所在的包路径
-  mapper-locations: classpath:mapper/*.xml    # mapper映射文件
+  type-aliases-package: com.itzixi.pojo       # 别名,所有pojo逆向的所有实体类(和数据库表一一映射)所在的包路径,entity bean昵称,容器做扫描
+  mapper-locations: classpath:mapper/*.xml    # mapper映射文件 对应指向 resources/mapper/*.xml
 #  configuration:
 #    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl   # 开启mybatis的日志实现，可以在控制台打印sql的输出
 
-# 通用mapper工具的配置
+# 通用mapper工具的配置,和tk.mybatis mapper有关
 mapper:
   mappers: com.itzixi.my.mapper.MyMapper      # 配置MyMapper，包含了一些封装好的CRUD方法
-  not-empty: false                            # 在进行数据库操作的时候，username != null 是否会追加 username != ''
-  identity: MYSQL
+  not-empty: false                            # 在进行数据库操作的时候，判断1个属性是否为空
+  identity: MYSQL                             # username != null 参数FALSE 不会自动追加 username != '' TRUE会追加
 
 # 分页插件助手的配置
 pagehelper:
   helper-dialect: MYSQL
-  support-methods-arguments: true
+  support-methods-arguments: true            # 支持方法中的参数
 
 logging:
   level:
