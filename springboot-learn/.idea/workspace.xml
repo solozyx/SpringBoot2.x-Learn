@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20415ac9-4172-4802-baa0-48b49817a817" name="Default Changelist" comment="spring boot starter">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="20415ac9-4172-4802-baa0-48b49817a817" name="Default Changelist" comment="spring boot starter mysql jdbc">
+      <change afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,6 +167,8 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1614840190972" />
@@ -174,7 +176,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.25714287" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -288,7 +290,13 @@
       <workItem from="1614783222473" duration="1823000" />
       <workItem from="1614822323287" duration="11306000" />
       <workItem from="1614837842688" duration="2363000" />
-      <workItem from="1643982148300" duration="3935000" />
+      <workItem from="1643982148300" duration="4719000" />
+      <workItem from="1644935554498" duration="348000" />
+      <workItem from="1644935945881" duration="120000" />
+      <workItem from="1644936157916" duration="1000" />
+      <workItem from="1644936176098" duration="8000" />
+      <workItem from="1644936229949" duration="141000" />
+      <workItem from="1644936557060" duration="6259000" />
     </task>
     <task id="LOCAL-00001" summary="spring boot starter">
       <created>1643985088615</created>
@@ -297,7 +305,21 @@
       <option name="project" value="LOCAL" />
       <updated>1643985088615</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="spring boot starter mysql jdbc">
+      <created>1643986917951</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1643986917952</updated>
+    </task>
+    <task id="LOCAL-00003" summary="spring boot starter mysql jdbc">
+      <created>1644940696263</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1644940696263</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -417,7 +439,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="spring boot starter" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring boot starter" />
+    <MESSAGE value="spring boot starter mysql jdbc" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring boot starter mysql jdbc" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/itzixi/config/GraceExceptionHandler.java">
