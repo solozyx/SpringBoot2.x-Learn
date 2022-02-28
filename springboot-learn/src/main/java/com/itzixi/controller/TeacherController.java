@@ -19,6 +19,7 @@ import java.util.Map;
 import java.util.UUID;
 
 @RestController
+// 路由
 @RequestMapping("teacher")
 @Slf4j
 public class TeacherController {
@@ -55,6 +56,8 @@ public class TeacherController {
     }
 
     @PostMapping("create")
+    // @RequestBody teacherBO 从前端传入业务层面的对象
+    // BindingResult result 校验结果集
     public JSONResult create(@Valid @RequestBody TeacherBO teacherBO, BindingResult result) {
 
         // 判断BindingResult中是否包含一些错误的信息，如果有错误，则直接返回给前端
@@ -67,6 +70,8 @@ public class TeacherController {
         String tid = UUID.randomUUID().toString();
 
         Teacher teacher = new Teacher();
+
+        // 把一个对象中的属性拷贝到另一个对象中,两个对象中一致的属性才发生拷贝,不一致不拷贝
         BeanUtils.copyProperties(teacherBO, teacher);
         teacher.setId(tid);
 //        teacher.setName("Jack");
@@ -83,6 +88,7 @@ public class TeacherController {
      */
     public Map<String, String> getErrors(BindingResult result) {
         Map<String, String> errorMap = new HashMap<>();
+        // 泛型是FieldError
         List<FieldError> errorList = result.getFieldErrors();
         for (FieldError error : errorList) {
             // 获得检验发送错误的某个属性名称

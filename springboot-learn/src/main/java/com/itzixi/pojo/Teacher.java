@@ -3,7 +3,15 @@ package com.itzixi.pojo;
 import javax.persistence.Id;
 import java.util.Date;
 
+// 和数据库映射,表名
+//@Table(name = "teacher")
+
+// lombok注解,【不推荐加,因为这是和数据库直接关联的】修改后再重新生成就丢掉了,增加维护成本
+// @Data
+// 自定义的entity可以扩展使用的lombok
+
 public class Teacher {
+    // 主键ID
     @Id
     private String id;
 

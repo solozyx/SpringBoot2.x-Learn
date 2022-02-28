@@ -10,6 +10,8 @@ import tk.mybatis.spring.annotation.MapperScan;
  *    并且会扫描到springboot容器中
  */
 @SpringBootApplication
+
+// 扫描mapper所在位置,扫描后放入到容器
 @MapperScan("com.itzixi.mapper")
 
 public class Application {

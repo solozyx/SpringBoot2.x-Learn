@@ -16,7 +16,9 @@ import tk.mybatis.mapper.entity.Example;
 import java.util.List;
 import java.util.UUID;
 
+// 该注解:service的实现,放到SpringBoot容器中,能在Controller调用
 @Service
+
 @Slf4j
 public class TeacherServiceImpl implements TeacherService {
 
@@ -105,13 +107,14 @@ public class TeacherServiceImpl implements TeacherService {
         teacherMapper.deleteByExample(example);
     }
 
+    // REQUIRED 再执行事务时,执行时没有,则创建新的事务.
     @Transactional(propagation = Propagation.REQUIRED)
     @Override
     public void testTrans() {
         // 1. 新增数据
         // 2. 修改数据
         // 3. 模拟发生异常
-        // 4. 观察1和2所发生的数据变动，有没有影响数据库(实际：不应该映射，事务应该不成功)
+        // 4. 观察1和2所发生的数据变动，有没有影响数据库(实际：不应该影响，事务应该不成功)
         // 5. 处理事务，实现事务的回滚，不让先前的数据入库
 
         String tid = UUID.randomUUID().toString();
@@ -124,6 +127,7 @@ public class TeacherServiceImpl implements TeacherService {
 
         teacherMapper.insert(teacher);
 
+        // 模拟1个除法异常
         int a = 1 / 0;
 
         Teacher teacherForUpdate = new Teacher();
