@@ -52,6 +52,7 @@ public class TeacherServiceImpl implements TeacherService {
 //        criteria.andGreaterThanOrEqualTo("age", age);
 //        criteria.andEqualTo("sex", sex);
 //
+          // selectByExample(Object example) 通过实例创建条件,条件中匹配相应内容
 //        List<Teacher> teacherList = teacherMapper.selectByExample(example);
 //        return teacherList;
 //    }

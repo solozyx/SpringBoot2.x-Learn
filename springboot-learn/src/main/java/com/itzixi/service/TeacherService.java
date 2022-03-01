@@ -22,7 +22,7 @@ public interface TeacherService {
      * 根据条件查询对象的list
      * @param name
      * @param sex
-     * @return
+     * @return 泛型是 Teacher
      */
     public List<Teacher> queryTeacherByCondition(String name, Integer age, String sex);
 
